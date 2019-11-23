@@ -1,0 +1,163 @@
+{
+  "contractName": "DarkTop",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "path",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "names",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "k_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "o",
+          "type": "address"
+        }
+      ],
+      "name": "e057f20f",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        }
+      ],
+      "name": "be057be5",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_s",
+          "type": "string"
+        }
+      ],
+      "name": "json",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_s",
+          "type": "string"
+        }
+      ],
+      "name": "f206f8be",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "",
+  "deployedBytecode": "",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "",
+  "sourcePath": "",
+  "ast": {},
+  "legacyAST": {},
+  "compiler": {},
+  "networks": {
+    "1": {
+      "events": {},
+      "links": {},
+      "address": "0x996F518610E0586d9E13C3f860B4F7b68F27E33A",
+      "transactionHash": "0x2ed77ba8aec2caefd69a366d18510cd6390e110ad80925b4b10c44451be544ab"
+    }
+  },
+  "schemaVersion": "3.0.12",
+  "updatedAt": "2019-09-22T02:20:34.675Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,1092 @@
+{
+  "contractName": "DarkTokenGame",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "plyID_v4_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "vID_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "v_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rewds_un_",
+      "outputs": [
+        {
+          "name": "mf_r",
+          "type": "uint256"
+        },
+        {
+          "name": "st_r",
+          "type": "uint256"
+        },
+        {
+          "name": "x3",
+          "type": "uint256"
+        },
+        {
+          "name": "n3",
+          "type": "uint256"
+        },
+        {
+          "name": "lot_r",
+          "type": "uint256"
+        },
+        {
+          "name": "lAff_r",
+          "type": "uint256"
+        },
+        {
+          "name": "wd_e",
+          "type": "uint256"
+        },
+        {
+          "name": "wd_t",
+          "type": "uint256"
+        },
+        {
+          "name": "ivst_e",
+          "type": "uint256"
+        },
+        {
+          "name": "up_t",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "plyRod_",
+      "outputs": [
+        {
+          "name": "eth",
+          "type": "uint256"
+        },
+        {
+          "name": "toks",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "plys_",
+      "outputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "affAddr_1",
+          "type": "address"
+        },
+        {
+          "name": "affID_1",
+          "type": "uint256"
+        },
+        {
+          "name": "affID_2",
+          "type": "uint256"
+        },
+        {
+          "name": "affID_3",
+          "type": "uint256"
+        },
+        {
+          "name": "ivtn_1",
+          "type": "uint256"
+        },
+        {
+          "name": "lt_i",
+          "type": "uint256"
+        },
+        {
+          "name": "rg_t",
+          "type": "uint256"
+        },
+        {
+          "name": "cwd_t",
+          "type": "uint256"
+        },
+        {
+          "name": "cwd_e",
+          "type": "uint256"
+        },
+        {
+          "name": "lwd_t",
+          "type": "uint256"
+        },
+        {
+          "name": "ivt",
+          "type": "uint256"
+        },
+        {
+          "name": "ivt_wd",
+          "type": "uint256"
+        },
+        {
+          "name": "cpl",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "CalcReward",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "addrxPID_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "setContractAddress",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rewds_tal_",
+      "outputs": [
+        {
+          "name": "mf_r",
+          "type": "uint256"
+        },
+        {
+          "name": "st_r",
+          "type": "uint256"
+        },
+        {
+          "name": "x3",
+          "type": "uint256"
+        },
+        {
+          "name": "n3",
+          "type": "uint256"
+        },
+        {
+          "name": "lot_r",
+          "type": "uint256"
+        },
+        {
+          "name": "lAff_r",
+          "type": "uint256"
+        },
+        {
+          "name": "wd_e",
+          "type": "uint256"
+        },
+        {
+          "name": "wd_t",
+          "type": "uint256"
+        },
+        {
+          "name": "ivst_e",
+          "type": "uint256"
+        },
+        {
+          "name": "up_t",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "forb_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "l_v4_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getsTimeLeft",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "plyID_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "getPlayerInfo",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenAddr",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "rID_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getRewardInfo",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[8]"
+        },
+        {
+          "name": "",
+          "type": "uint256[4]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "checkRound",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "v",
+          "type": "uint256"
+        }
+      ],
+      "name": "getvRatio",
+      "outputs": [
+        {
+          "name": "_ratio",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "supV_",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_affCode",
+          "type": "uint256"
+        }
+      ],
+      "name": "meetFuturePlay",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "l_v4_i",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "rID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRoundInfo",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "dev",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rod_",
+      "outputs": [
+        {
+          "name": "plyID",
+          "type": "uint256"
+        },
+        {
+          "name": "plyID_10",
+          "type": "uint256"
+        },
+        {
+          "name": "end_t",
+          "type": "uint256"
+        },
+        {
+          "name": "start_t",
+          "type": "uint256"
+        },
+        {
+          "name": "toks",
+          "type": "uint256"
+        },
+        {
+          "name": "eth",
+          "type": "uint256"
+        },
+        {
+          "name": "pot",
+          "type": "uint256"
+        },
+        {
+          "name": "pot_over",
+          "type": "uint256"
+        },
+        {
+          "name": "ended",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "gameReward",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTimeLeft",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "nodeUpgrade",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "o",
+          "type": "address"
+        }
+      ],
+      "name": "dfa227e0",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "name": "_affID",
+          "type": "uint256"
+        }
+      ],
+      "name": "registerAddrToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "iVst_",
+      "outputs": [
+        {
+          "name": "v",
+          "type": "uint256"
+        },
+        {
+          "name": "u",
+          "type": "uint256"
+        },
+        {
+          "name": "t",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "getInfo",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "EthLog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenLog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "rID",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "winPID",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "winVal",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "nVal",
+          "type": "uint256"
+        }
+      ],
+      "name": "GameLog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "pId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "ivt",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "ivt_wd",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "st",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "cwd_e",
+          "type": "uint256"
+        }
+      ],
+      "name": "CalcRewardLog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "pId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "out",
+          "type": "bool"
+        }
+      ],
+      "name": "PlayerOutLog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "pId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "v",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "sv",
+          "type": "uint256"
+        }
+      ],
+      "name": "Olog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "name": "RLog",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "rates",
+          "type": "int16[5]"
+        }
+      ],
+      "name": "RateLog",
+      "type": "event"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "",
+  "deployedBytecode": "",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "",
+  "sourcePath": "",
+  "ast": {},
+  "legacyAST": {},
+  "compiler": {},
+  "networks": {
+    "1": {
+      "events": {},
+      "links": {},
+      "address": "0x3dAe53Ee778A324BD317BD270d6227406B6bd4eD",
+      "transactionHash": "0xd473aa0edabd79beffea606e5d5414429b0f73790f2da9fc6beb6ed6753ee710"
+    }
+  },
+  "schemaVersion": "3.0.12",
+  "updatedAt": "2019-09-22T02:20:11.895Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

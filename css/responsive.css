@@ -1,0 +1,100 @@
+@media screen and (min-width:768px){
+   .header{
+   	background-image: url(../img/pc_01.jpg);
+   }
+   .game{
+   	 background-image: url(../img/pc_03.jpg);
+   	 background-repeat:repeat-y;
+   	 background-size: inherit;
+   }
+    .join{
+   	 background-image: url(../img/pc_03.jpg);
+   	 background-repeat:repeat-y;
+   	 background-size: inherit;
+   }
+   .block_box{
+   	 background-color: #010230;
+   	 background-image: url(../img/pc_05.jpg);
+   	 padding-bottom: 360px;
+   }
+   .start_time{ margin-top: 50px;}
+   .common_title span{
+    	width: 400px;
+	    height: 90px;
+	    line-height: 90px;
+   }
+
+   .lottery{
+   	border-radius: 0px;
+   }
+   .block_item{
+   	   background: #020b50;
+	   margin-right: 15px;
+	   padding: 20px 8px;
+	   
+   }
+   
+}
+@media only screen and (min-width:0px) and (max-width: 1200px) {
+	.block_list {
+		display: block;
+	}
+	.block_item {
+		margin-right: 0;
+	}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   
+	.logo img {
+		width: 160px;
+	}
+	.title {
+		font-size: 60px;
+	}
+	.common_intro {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.header {
+		background-image: url(../img/bg_01.jpg);
+		padding: 50px 0;
+		padding-bottom:420px;
+	}
+	.game{
+		background-image: url(../img/bg_02.jpg);
+	}
+	.join{
+		background-image: url(../img/bg_03.jpg);
+	}
+	.block_box{
+   	 background-image: url(../img/bg_04.jpg);
+    }
+	.logo img {
+		width: 90px;
+	}
+	.title {
+		font-size: 50px;
+	}
+	.common_intro {
+		width: 80%;
+	}
+	.common_intro {
+		width:90%;
+	}
+	.nav_btn{
+		display: block;
+	}
+	.nav{
+		display: none;
+		
+	}
+	.nav_mobile{ display: block;}
+	.back{ display: block;}
+	.common_title{
+		font-size: 30px;
+	}
+	
+}

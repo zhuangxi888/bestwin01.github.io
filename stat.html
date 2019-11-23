@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>OCCHIO DEL FUTURO</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="icon" type="image/x-icon" href='img/favicon.ico' />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="lang/lang.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/web3.min.js"></script>
+		<script type="text/javascript" src="js/truffle-contract.js"></script>
+		<script type="text/javascript" src="js/clipboard.min.js.js"></script>
+	</head>
+
+	<body>
+		<div id="app" v-cloak>
+
+			<div class="statisticsTop">
+				<!--statisticsTop start-->
+				<div class="container">
+					<div class="nav_btn" @click="getNavs">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="nav">
+						<ul>
+							<li v-for="(value,index) in langList" @click="changeLang(index)">{{value}}</li>
+						</ul>
+					</div>
+
+					<div class="nav_mobile" v-show="showNav">
+						<div class="bg">
+							<ul>
+								<li v-for="(value,index) in langList" @click="changeLang(index)">{{value}}</li>
+							</ul>
+						</div>
+					</div>
+
+					
+
+				</div>
+			</div>
+			<!--statisticsTop end-->
+
+			<div class="block_box block_common">
+				<div class="container">
+					<!--rank，income，other start-->
+
+					<div class="block_list">
+						<div class="block_item">
+
+							<h3 class="common_sub_title mb20"><span class="left"></span>{{langItem.ranking.title}}<span class="right"></span></h3>
+
+							<div class="item_box">
+								<div class="common_box">
+									<div class="common_item">
+										<h4 class="fbold">{{langItem.ranking.share_title}}</h4>
+										<p>{{langItem.ranking.achievement}}：{{rankData.direct.achievement | numFilter}} ETH</p>
+										<p>{{langItem.ranking.rank}}：{{rankData.direct.rank}}</p>
+										<p class="click" @click="showPop('directPop')">
+											<span>{{langItem.ranking.veiw_top10}}</span>
+										</p>
+
+									</div>
+									<div class="common_item">
+										<h4 class="fbold">{{langItem.ranking.group_title}}</h4>
+										<p>{{langItem.ranking.achievement}}：{{rankData.group.achievement | numFilter}} ETH</p>
+										<p>{{langItem.ranking.rank}}：{{rankData.group.rank}}</p>
+										<p class="click" @click="showPop('groupPop')">
+											<span>{{langItem.ranking.veiw_top10}}</span>
+										</p>										
+									</div>
+								</div>
+
+								<div class="common_box top mt20 pt10" style="border-top:1px solid #022d9b;">
+									<div class="common_item" style="border-right: none;">
+										<h4 class="fbold">{{langItem.com.the}}{{rankData.season.term}}{{langItem.ranking.buy_title}}</h4>
+										<p>{{langItem.ranking.achievement}}：{{rankData.season.achievement | numFilter}} ETH</p>
+										<p>{{langItem.ranking.rank}}：{{rankData.season.rank}} <span class="keep_up" v-if="rankData.season.rank > 60">{{langItem.ranking.keep_up}}</span></p>
+									</div>
+
+									<div class="common_item">
+										<p class="click" @click="showPop('seasonPop')">
+											<span>{{langItem.ranking.veiw_top60}}</span>
+										</p>	
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="block_item income">
+							<h3 class="common_sub_title mb20">
+								<span class="left"></span>
+								{{langItem.income.dynamic_income}}
+								<span class="right"></span>
+							</h3>
+														
+							<div class="item_box">
+								<div class="common_box">
+									
+									<div class="common_item">
+										<h4 class="fbold">{{langItem.statistics.my_team}}</h4>
+										<p>{{langItem.statistics.team_node}}：{{otherData.group.nodes}}</p>
+										<p>{{langItem.statistics.large_area}}：{{otherData.group.largeArea | numFilter}} ETH</p>
+										<p>{{langItem.statistics.small_area}}：{{otherData.group.smallArea | numFilter}} ETH</p>
+									</div>
+								</div>
+							</div>
+					          
+							<ul>
+								<li><span>{{income.list.dynamic.share | numFilter}} ETH</span>{{langItem.income.sharing_income}}</li>
+								<li><span>{{income.list.dynamic.group | numFilter}} ETH</span>{{langItem.income.group_income}}</li>
+								<li><span>{{income.list.dynamic.rank | numFilter}} ETH</span>{{langItem.income.rank_income}}</li>
+								<li><span>{{income.list.distribution | numFilter}} ETH</span>{{langItem.income.distribution_income}}</li>
+								<li><span>{{income.list.season | numFilter}} ETH</span>{{langItem.income.season_income}}</li>								
+								<li><span>{{income.list.nodeIncome | numFilter}} ETH</span>{{langItem.income.node_icome}}</li>							
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+			<!--rank，income，other end-->
+
+			<pop-rank v-show="directPop" :title="{msg:langItem.ranking.rank10,rank:langItem.ranking.rank_title,achievement:langItem.ranking.ac_title,id:langItem.ranking.id}" :datafrom="rankData.direct.top10 "></pop-rank>
+			<pop-rank v-show="groupPop" :title="{msg:langItem.ranking.group10,rank:langItem.ranking.rank_title,achievement:langItem.ranking.ac_title,id:langItem.ranking.id}" :datafrom="rankData.group.top10 "></pop-rank>
+			<pop-rank v-show="seasonPop" :title="{msg:langItem.ranking.season60,rank:langItem.ranking.rank_title,achievement:langItem.ranking.ac_title,id:langItem.ranking.id}" :datafrom="rankData.season.top60 "></pop-rank>
+
+			
+		</div>
+		<script type="text/javascript " src="js/stat.js "></script>
+
+	</body>
+
+</html>
